@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemilu Serentak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('bgpemilu3.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            width: 100vw; /* Lebar penuh layar */
+            height: 100vh; /* Tinggi penuh layar */
+        }
+        .container {
+            flex: 1;
+            justify-content: center;
+           
+        }
+        .highlight-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 5rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            color: black;
+            text-align: center;
+        }
+        .image-section {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+        .image-section img {
+            width: 30%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+        }
+        /* Animasi Gambar */
+        .image-section img:nth-child(1) {
+            animation: slideInLeft 1s ease forwards;
+        }
+        .image-section img:nth-child(2) {
+            animation: slideInRight 1s ease forwards;
+        }
+        .image-section img:nth-child(3) {
+            animation: slideInBottom 1s ease forwards;
+        }
+        footer {
+            background-color: rgba(17, 16, 16, 0.9);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideInBottom {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        /* Navbar Styles */
+    .navbar-nav .nav-link {
+        font-size: 1.0rem; /* Mengubah ukuran teks menu */
+        padding: 10px 10px; /* Mengubah padding menu */
+    }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pemilu RI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Halaman Utama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten -->
+    <div class="container">
+        <div class="highlight-card">
+            <h1>Bangkit Bersama untuk Masa Depan yang Lebih Baik!</h1>
+            <p>Jadilah bagian dari perubahan. Pemilu Serentak 2024 adalah milik kita semua.</p>
+        </div>
+
+        <!-- Gambar -->
+        <div class="image-section">
+            <img src="ftdash1.jpg" alt="Gambar Kiri">
+            <img src="ftdash.jpg" alt="Gambar Kanan">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Pemilu RI | Bersama, Kita Membangun Masa Depan</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

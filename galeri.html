@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Pemilu Serentak RI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tambahkan Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('bgpemilu3.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .gallery-container img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-container img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            margin-top: 2rem;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.0rem;
+            padding: 10px 10px;
+        }
+        footer {
+            background-color: rgba(17, 16, 16, 0.9);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pemilu RI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Halaman Utama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian Galeri -->
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center">Galeri Pemilu</h1>
+        <p class="text-center">Momen-momen penting dari Pemilu Serentak Republik Indonesia</p>
+
+        <div class="row gallery-container mt-4">
+            <!-- Tambahkan atribut data-lightbox -->
+            <div class="col-md-4 mb-4">
+                <a href="galeri1.jpg" data-lightbox="gallery" data-title="Momen Pemilu 1">
+                    <img src="galeri1.jpg" class="img-fluid" alt="Galeri 1">
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="galeri2.jpeg" data-lightbox="gallery" data-title="Momen Pemilu 2">
+                    <img src="galeri2.jpeg" class="img-fluid" alt="Galeri 2">
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="galeri3.jpeg" data-lightbox="gallery" data-title="Momen Pemilu 3">
+                    <img src="galeri3.jpeg" class="img-fluid" alt="Galeri 3">
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="galeri4.jpg" data-lightbox="gallery" data-title="Momen Pemilu 4">
+                    <img src="galeri4.jpg" class="img-fluid" alt="Galeri 4">
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="galeri5.jpg" data-lightbox="gallery" data-title="Momen Pemilu 5">
+                    <img src="galeri5.jpg" class="img-fluid" alt="Galeri 5">
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="galeri6.jpeg" data-lightbox="gallery" data-title="Momen Pemilu 6">
+                    <img src="galeri6.jpeg" class="img-fluid" alt="Galeri 6">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Pemilu RI | Bersama, Kita Membangun Masa Depan</p>
+    </footer>
+
+
+    <!-- Tambahkan Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

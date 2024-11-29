@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Pemilu Serentak RI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('bgpemilu3.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0; /* Menghilangkan margin default */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Memastikan halaman setinggi viewport */
+        }
+        .navbar {
+            margin-bottom: 0; /* Menghilangkan jarak bawah navbar */
+        }
+        .container {
+            margin-top: 10px 0; /* Jarak dari navbar ke konten */
+            flex-grow: 1; /* Membuat konten tumbuh untuk mengisi ruang */
+        }
+        .card {
+            background-color: #d41212; /* Solid merah */
+            border-radius: 10px;
+        }
+        .card-body {
+            color: white;
+        }
+        .card img {
+            width: 100%; /* Memastikan semua gambar menyesuaikan dengan lebar card */
+            height: 200px; /* Memberikan tinggi yang sama pada semua gambar */
+            object-fit: cover; /* Memastikan gambar tetap proporsional dalam ukuran */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-title a {
+            color: white;
+            text-decoration: none;
+        }
+        .card-title a:hover {
+            text-decoration: underline;
+        }
+        /* Navbar Styles */
+        .navbar-nav .nav-link {
+            font-size: 1.0rem; /* Mengubah ukuran teks menu */
+            padding: 10px 10px; /* Mengubah padding menu */
+        }
+        footer {
+            background-color: rgba(17, 16, 16, 0.9);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pemilu RI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Halaman Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten Berita -->
+    <div class="container">
+        <h1 class="text-center mb-4">Berita Pemilu Serentak RI</h1>
+
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="4isu.png" class="card-img-top" alt="Berita 1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            4 Isu Krusial Persiapan Pilkada Serentak 2024
+                        </h5>
+                        <p class="card-text">Menurut Pengajar Hukum Tata Negara, Titi Anggraini, ada empat isu paling krusial dalam Pemilihan Kepala Daerah (Pilkada)...</p>
+                        <a href="https://rumahpemilu.org/4-isu-krusial-persiapan-pilkada-serentak-2024/" class="text-white text-decoration-none" target="_blank">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="refleksi.jpeg" class="card-img-top" alt="Berita 2">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Refleksi Pemilu 2024: Ambisi Politik dan Kekalahan Hukum
+                        </h5>
+                        <p class="card-text">Politik harus tunduk pada hukum, bukan sebaliknya. Begitu adagium hukum mengungkapkannya...</p>
+                        <a href="https://antikorupsi.org/id/refleksi-pemilu-2024-ambisi-politik-dan-kekalahan-hukum" class="text-white text-decoration-none" target="_blank">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Dwi-Anggraini.jpg" class="card-img-top" alt="Berita 3">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Pemilu 2024 selesai, Perlukah Konsolidasi Demokrasi?
+                        </h5>
+                        <p class="card-text">Hingga saat ini belum ada pengumuman resmi KPU terkait penetapan hasil pemilu 2024 lalu...</p>
+                        <a href="https://www.unand.ac.id/index.php/berita/opini/826-unand-dosen-politik-opini.html" class="text-white text-decoration-none" target="_blank">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer>
+        <p>© 2024 Pemilu RI | Bersama, Kita Membangun Masa Depan</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
